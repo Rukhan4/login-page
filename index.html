@@ -26,15 +26,18 @@
             </div>
             <form>
                 <p class="form-item">Character name*</p>
-                <input type="text" name="username" placeholder="Username" required />
+                <input type="text" id="username" name="username" placeholder="Username" minlength="3" required />
                 <p class="form-item">Email Address*</p>
-                <input type="email" name="email" placeholder="Joe@Yahoo.com" required />
+                <input type="email" id="mail" name="email" placeholder="Joe@Yahoo.com" required />
                 <p class="form-item">Password*</p>
-                <input type="password" name="password" placeholder="5-20 Characters" required minlength="5"
+                <p class="info">Password must be at least 5 characters long and
+                    include at least one: <br> Uppercase, Lowercase, Number and Symbol (!@#$%^&*)
+                </p>
+                <input type="password" id="pass1" name="password" placeholder="Enter password" required minlength="5"
                     maxlength="20" />
                 <p class="form-item">Confirm Password*</p>
-                <input type="password" name="confirm_password" placeholder="5-20 Characters" required minlength="5"
-                    maxlength="20" />
+                <input type="password" id="pass2" name="confirm_password" placeholder="Confirm password" required
+                    minlength="5" maxlength="20" />
                 <div class="choices">
                     <p class="selection">Choose Your Destiny</p>
                     <button class="path" type="button">Mage</button>
@@ -44,6 +47,7 @@
                 <button type="submit" class="btn-submit">Register</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

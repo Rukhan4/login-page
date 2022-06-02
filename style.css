@@ -56,6 +56,11 @@ input {
     color: #7f5745;
 }
 
+.info {
+    font-size: 12px;
+    margin-top: -20px;
+}
+
 .choices {
     display: block;
     background-color: #7f5745;
@@ -105,8 +110,4 @@ input {
 
 input:focus:invalid {
     border: 2px solid red;
-}
-
-input:focus:valid {
-    border: 2px solid green;
 }
