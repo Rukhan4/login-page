@@ -42,6 +42,7 @@ confirm_password.addEventListener('input', function (e) {
     }
 });
 
+// query for choosing class
 $('button').on('click', function () {
     $('button').removeClass('on').addClass('off');
     $(this).removeClass('off').addClass('on');

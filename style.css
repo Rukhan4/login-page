@@ -135,12 +135,12 @@ input:focus:valid {
 }
 
 button.on.path#mage {
-    background: rgb(247, 62, 62);
+    background: rgb(253, 100, 100);
     color: white;
 }
 
 button.on.path#warrior {
-    background: rgb(69, 227, 255);
+    background: rgb(103, 232, 255);
     color: white;
 }
 
@@ -152,4 +152,14 @@ button.on.path#thief {
 button.off.path {
     background: lightgray;
     color: gray;
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: #ca6638;
 }
