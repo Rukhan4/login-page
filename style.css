@@ -17,12 +17,11 @@
     justify-content: center;
     align-items: center;
     background: #1f1f1f;
-    margin-top: 30px;
+    margin: 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px black;
     max-width: 100%;
-    height: auto;
-    padding: 10px;
+    height: fit-content;
 }
 
 .register {
@@ -46,7 +45,11 @@ input {
     background-color: #7f5745;
     padding: 20px;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    word-wrap: break-word;
 }
 
 .form-item {
@@ -70,6 +73,7 @@ input {
     padding-top: 10px;
     text-align: center;
     background-color: #7f5745;
+
 }
 
 .path {
@@ -80,6 +84,7 @@ input {
     padding: 10px;
     margin-left: 26px;
     width: fit-content;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 
 }
 
@@ -90,9 +95,18 @@ input {
     width: 100%;
     font-size: medium;
     font-weight: bold;
+
 }
 
 .btn-submit:active {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+
+input:focus:invalid {
+    border: 2px solid red;
+}
+
+input:focus:valid {
+    border: 2px solid green;
 }
