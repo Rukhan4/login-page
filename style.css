@@ -133,3 +133,23 @@ input:focus:valid {
     justify-content: center;
     align-items: center;
 }
+
+button.on.path#mage {
+    background: rgb(247, 62, 62);
+    color: white;
+}
+
+button.on.path#warrior {
+    background: rgb(69, 227, 255);
+    color: white;
+}
+
+button.on.path#thief {
+    background: rgb(108, 255, 108);
+    color: white;
+}
+
+button.off.path {
+    background: lightgray;
+    color: gray;
+}

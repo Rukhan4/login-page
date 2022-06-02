@@ -41,3 +41,8 @@ confirm_password.addEventListener('input', function (e) {
         confirm_password.style.border = "2px solid #00FF00";
     }
 });
+
+$('button').on('click', function () {
+    $('button').removeClass('on').addClass('off');
+    $(this).removeClass('off').addClass('on');
+});
