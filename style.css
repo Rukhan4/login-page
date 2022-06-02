@@ -111,3 +111,18 @@ input {
 input:focus:invalid {
     border: 2px solid red;
 }
+
+input:focus:valid {
+    border: 2px solid #00FF00;
+}
+
+#togglePassword {
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.passholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
