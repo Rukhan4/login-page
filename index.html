@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
     </style>
@@ -28,13 +29,18 @@
                 <p class="form-item">Character name*</p>
                 <input type="text" id="username" name="username" placeholder="Username" minlength="3" required />
                 <p class="form-item">Email Address*</p>
-                <input type="email" id="mail" name="email" placeholder="Joe@Yahoo.com" required />
+                <input type="email" id="mail" name="email" placeholder="joe@yahoo.com"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="ex: joe@yahoo.com" required />
                 <p class="form-item">Password*</p>
                 <p class="info">Password must be at least 5 characters long and
                     include at least one: <br> Uppercase, Lowercase, Number and Symbol (!@#$%^&*)
                 </p>
-                <input type="password" id="pass1" name="password" placeholder="Enter password" required minlength="5"
-                    maxlength="20" />
+                <div class="passholder">
+                    <input type="password" id="pass1" name="password" placeholder="Enter password" required
+                        minlength="5" maxlength="20" />
+                    <i class="far fa-eye" id="togglePassword"></i>
+                </div>
+
                 <p class="form-item">Confirm Password*</p>
                 <input type="password" id="pass2" name="confirm_password" placeholder="Confirm password" required
                     minlength="5" maxlength="20" />
