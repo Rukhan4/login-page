@@ -19,21 +19,22 @@
             <div class="txtbox1">
                 <p>Sign up now and start your adventure</p>
             </div>
-            <form>
+            <form action="register.lol" method="post">
                 <p class="form-item">Character name*</p>
                 <input type="text" name="username" placeholder="Username" required />
                 <p class="form-item">Email Address*</p>
-                <input type="email" name="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Joe@Yahoo.com" required />
                 <p class="form-item">Password*</p>
-                <input type="password" name="password" placeholder="Password" required minlength="5" maxlength="20" />
+                <input type="password" name="password" placeholder="5-20 Characters" required minlength="5"
+                    maxlength="20" />
                 <p class="form-item">Confirm Password*</p>
-                <input type="password" name="confirm_password" placeholder="Confirm Password" required minlength="5"
+                <input type="password" name="confirm_password" placeholder="5-20 Characters" required minlength="5"
                     maxlength="20" />
                 <div class="choices">
-                    <p>Choose a path</p>
-                    <button>Mage</button>
-                    <button>Warrior</button>
-                    <button>Thief</button>
+                    <p class="selection">Choose Your Destiny</p>
+                    <button class="path" type="button">Mage</button>
+                    <button class="path" type="button">Warrior</button>
+                    <button class="path" type="button">Thief</button>
                 </div>
                 <button type="submit" class="btn-submit">Register</button>
         </div>
