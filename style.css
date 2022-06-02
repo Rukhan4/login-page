@@ -78,7 +78,14 @@ input {
     padding-top: 10px;
     text-align: center;
     background-color: #7f5745;
+}
 
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60;
+    margin-right: 25px;
 }
 
 .path {
@@ -88,9 +95,8 @@ input {
     border-color: aliceblue;
     padding: 10px;
     margin-left: 26px;
-    width: fit-content;
+    width: 100%;
     font-family: 'Kdam Thmor Pro', sans-serif;
-
 }
 
 .btn-submit {
