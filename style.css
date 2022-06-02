@@ -1,0 +1,29 @@
+:root {
+    background: rgb(46, 45, 45);
+}
+
+@font-face {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background: #1f1f1f;
+    margin: 100px;
+}
+
+#dova {
+    height: 100%;
+}
+
+.txtbox1 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: medium;
+    background-color: rgb(192, 147, 65);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.register {}
