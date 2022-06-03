@@ -49,15 +49,14 @@ $(function () {
     $(".pr-password").passwordRequirements();
 });
 
-console.log($(".pr-password").passwordRequirements());
 
-// $('form').on('submit', function () {
-//     if ($('.pr-password').val() != $('.pr-password').val()) {
-//         $(".shakeInput").effect("shake", { times: 2 }, 100);
-//         $('.pr-password').focus();
-//         return false;
-//     }
-// })
+$('form').on('submit', function () {
+    if (password.checkValidity() != true) {
+        $(".shakeInput").effect("shake", { times: 2 }, 100);
+        $('.pr-password').focus();
+        return false;
+    }
+})
 
 
 
