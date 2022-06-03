@@ -1,5 +1,5 @@
 # Login Page
-→ [Live Demo](https://rukhan4.github.io/signup-form/index.html)
+→ [Live Demo](https://rukhan4.github.io/signup-form/index)
 
 ## Table of contents
 * [Description](#description)
