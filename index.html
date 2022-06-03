@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./validate-password-requirements/css/jquery.passwordRequirements.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./validate-password-requirements/js/jquery.passwordRequirements.min.js"></script>
+
     <title>Dova</title>
 </head>
 
@@ -25,22 +28,20 @@
                     who you choose to be is up to you.
                 </p>
             </div>
-            <form>
+            <form autocomplete="off">
                 <p class="form-item">Character name*</p>
                 <input type="text" id="username" name="username" placeholder="Username" minlength="3" required />
                 <p class="form-item">Email Address*</p>
                 <input type="email" id="mail" name="email" placeholder="joe@yahoo.com"
                     pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="ex: joe@yahoo.com" required />
                 <p class="form-item">Password*</p>
-                <p class="info">Password must be at least 5 characters long and
-                    include at least one: <br> Uppercase, Lowercase, Number and Symbol (!@#$%^&*)
-                </p>
-                <div class="passholder">
-                    <input type="password" id="pass1" name="password" placeholder="Enter password" required
-                        minlength="5" maxlength="20" />
-                    <i class="far fa-eye" id="togglePassword"></i>
+                <div class="shakeInput">
+                    <div class="passholder">
+                        <input type="password" id="pass1" class="pr-password" name="password"
+                            placeholder="Enter password" required />
+                        <i class="far fa-eye" id="togglePassword"></i>
+                    </div>
                 </div>
-
                 <p class="form-item">Confirm Password*</p>
                 <input type="password" id="pass2" name="confirm_password" placeholder="Confirm password" required
                     minlength="5" maxlength="20" />

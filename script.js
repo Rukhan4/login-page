@@ -2,6 +2,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('mail');
 const password = document.getElementById("pass1");
 const confirm_password = document.getElementById("pass2");
+const togglePassword = document.querySelector('#togglePassword');
 
 
 // validate username
@@ -19,7 +20,6 @@ username.addEventListener('input', function (e) {
 });
 
 // Show password on click
-const togglePassword = document.querySelector('#togglePassword');
 
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -41,6 +41,25 @@ confirm_password.addEventListener('input', function (e) {
         confirm_password.style.border = "2px solid #00FF00";
     }
 });
+
+
+// validate password with pattern specified
+
+$(function () {
+    $(".pr-password").passwordRequirements();
+});
+
+console.log($(".pr-password").passwordRequirements());
+
+// $('form').on('submit', function () {
+//     if ($('.pr-password').val() != $('.pr-password').val()) {
+//         $(".shakeInput").effect("shake", { times: 2 }, 100);
+//         $('.pr-password').focus();
+//         return false;
+//     }
+// })
+
+
 
 // query for choosing class
 $('button').on('click', function () {
