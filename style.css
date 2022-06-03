@@ -64,6 +64,10 @@ input {
     text-align: center;
 }
 
+.passwordStrengthForcer {
+    font-size: 12px;
+}
+
 .choices {
     display: block;
     background-color: #7f5745;
@@ -117,11 +121,11 @@ input {
     color: rgb(0, 0, 0);
 }
 
-input:focus:invalid {
+input:focus:invalid:not(#pass1) {
     border: 2px solid red;
 }
 
-input:focus:valid {
+input:focus:valid:not(#pass1) {
     border: 2px solid #00FF00;
 }
 
