@@ -21,7 +21,8 @@
 				useSpecial: true,
 				infoMessage: '',
 				style: "light", // Style Options light or dark
-				fadeTime: 300 // FadeIn / FadeOut in milliseconds
+				fadeTime: 300, // FadeIn / FadeOut in milliseconds
+				push: false
 			};
 
 			options = $.extend(defaults, options);
@@ -29,7 +30,7 @@
 			return this.each(function () {
 
 				var o = options;
-				var cnt = 0;
+
 
 				o.infoMessage = 'The minimum password length is ' + o.numCharacters + ' characters and must contain at least 1 lowercase letter, 1 capital letter, 1 number, and 1 special character.';
 				// Add Variables for the li elements
@@ -41,19 +42,19 @@
 				// Check if the options are checked
 				if (o.useLowercase === true) {
 					useLowercaseUI = '<li class="pr-useLowercase"><span></span>Lowercase letter</li>';
-					cnt++;
+
 				}
 				if (o.useUppercase === true) {
 					useUppercaseUI = '<li class="pr-useUppercase"><span></span>Capital letter</li>';
-					cnt++;
+
 				}
 				if (o.useNumbers === true) {
 					useNumbersUI = '<li class="pr-useNumbers"><span></span>Number</li>';
-					cnt++;
+
 				}
 				if (o.useSpecial === true) {
 					useSpecialUI = '<li class="pr-useSpecial"><span></span>Special character</li>';
-					cnt++;
+
 				}
 
 				// Append password hint div
@@ -183,6 +184,9 @@
 							useSpecialDone = false;
 						}
 					}
+					if (useSpecialDone === true && useNumbersDone === true && useUppercaseDone === true && useLowercaseDone === true && numCharactersDone === true) {
+						push = true;
+					};
 				});
 			});
 		}
