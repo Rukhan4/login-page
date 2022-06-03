@@ -49,10 +49,6 @@ input {
     margin-bottom: 20px;
 }
 
-.intro {
-    word-wrap: break-word;
-}
-
 .form-item {
     color: #7f5745;
 }
@@ -60,6 +56,12 @@ input {
 .info {
     font-size: 12px;
     margin-top: -20px;
+}
+
+.login {
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
 }
 
 .choices {
@@ -155,7 +157,7 @@ button.off.path {
 }
 
 .footer {
-    position: static;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
