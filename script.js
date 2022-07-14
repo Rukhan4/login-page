@@ -31,9 +31,8 @@ togglePassword.addEventListener('click', function (e) {
 
 // confirm passwords match
 confirm_password.addEventListener('input', function (e) {
-    if (confirm_password.checkValidity() == true) {
-        confirm_password.style.border = "2px solid #00FF00";
-    } else if (confirm_password.value != password.value) {
+ if (confirm_password.value != password.value) {
+        e.preventDefault();
         confirm_password.setCustomValidity("Passwords do not match!");
         confirm_password.style.border = "2px solid #FF0000";
     } else if (confirm_password.value == password.value) {
