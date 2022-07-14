@@ -8,7 +8,16 @@
 * [Live Example](#live)
 
 ## Description
-This project entails a login page that validates inputted data by utilizing jQuery and the Javascript Validation API. It is further styled with CSS GRID and Flexbox.
+This project entails a login page that validates inputted data by utilizing jQuery and the Javascript Validation API. It is further styled with CSS Flexbox.
+
+### Features: 
+
+1) Client-Side Form Validation with JavaScript
+2) Custom error messages with validation
+3) Password and Confirm Password validation with custom error message
+4) REGEX validation for Email. Javascript Validation API and jQuery for others
+
+
 	
 ## Technologies
 Project is created with:
